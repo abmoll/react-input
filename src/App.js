@@ -9,9 +9,9 @@ class App extends Component {
   state = {
     //persons: [
     userOutputs: [
-      {name: 'Alex the Brand', age: 49},
+      {name: 'Alex the Brando', age: 49},
       {name: 'David', age: 46},
-      {name: 'Matt', age: 47}
+      {name: 'Matthew', age: 47}
     ],
     otherState: 'other value'
   }
@@ -60,7 +60,7 @@ class App extends Component {
 
     return (
         <div className='App'>
-            <h1>I am another App</h1>
+            <h1>Best App</h1>
             <p>Looks to be fine, just fine...</p>
             <button
                 style={mystyle}
@@ -77,7 +77,7 @@ class App extends Component {
             <UserOutput
                 name={this.state.userOutputs[2].name}
                 age={this.state.userOutputs[2].age}/>
-            <UserInput changed={this.nameChangedHandler} currentName={this.state.name}/>
+            <UserInput changed={this.nameChangedHandler} currentName={this.state.userOutputs[1].name}/>
           </div>
             // <UserInput
             //     name={this.state.userInputs[2].name}
